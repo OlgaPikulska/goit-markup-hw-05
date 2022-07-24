@@ -1,3 +1,10 @@
+:root {
+  --blue-color: #2196f3;
+  --grey-color: #757575;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -26,6 +33,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /* HEADER */
 
 header {
@@ -80,11 +88,11 @@ header {
 }
 
 .logo-header {
-  color: black;
+  color: var(--black-color);
 }
 
 .logo-footer {
-  color: white;
+  color: var(--white-color);
 }
 .logo-place-footer {
   padding-top: 60px;
@@ -92,7 +100,7 @@ header {
   padding-bottom: 20px;
 }
 .first-word {
-  color: #2196f3;
+  color: var(--blue-color);
 }
 
 .nav {
@@ -116,7 +124,7 @@ header {
 
 .nav:hover,
 .nav:focus {
-  color: #2196f3;
+  color: var(--blue-color);
   text-decoration: none;
 }
 
@@ -131,7 +139,7 @@ header {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: #2196f3;
+  background-color: var(--blue-color);
 }
 .contact {
   font-family: Roboto;
@@ -149,13 +157,13 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, fill, text-decoration;
-  color: #757575;
-  fill: #757575;
+  color: var(--grey-color);
+  fill: var(--grey-color);
 }
 
 .contact:hover {
-  color: #2196f3;
-  fill: #2196f3;
+  color: var(--blue-color);
+  fill: var(--blue-color);
   text-decoration: none;
 }
 
@@ -163,7 +171,7 @@ header {
   padding-right: 30px;
 }
 .icon-header_mail_envelope {
-  stroke: #757575;
+  stroke: var(--grey-color);
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -174,7 +182,7 @@ header {
 }
 
 .icon-header_tel_smartphone {
-  stroke: #757575;
+  stroke: var(--grey-color);
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -208,7 +216,7 @@ header {
   line-height: 1.37em;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #ffffff;
+  color: var(--white-color);
   padding-top: 200px;
   padding-bottom: 30px;
   border: 1px none;
@@ -222,9 +230,9 @@ header {
   line-height: 1.88em;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #ffffff;
+  color: var(--white-color);
   cursor: pointer;
-  background-color: #2196f3;
+  background-color: var(--blue-color);
   width: 200px;
   height: 50px;
   border: 1px none;
@@ -245,7 +253,7 @@ header {
   align-items: center;
   justify-content: center;
   transition: transform, visibility, opacity;
-  transition-duration: 1000ms;
+  transition-duration: 500ms;
   transition-timing-function: linear;
 }
 
@@ -253,29 +261,29 @@ header {
   height: 581px;
   width: 528px;
   border-radius: 4px;
-  background-color: white;
+  background-color: var(--white-color);
   display: flex;
   justify-content: flex-end;
   position: absolute;
 }
 
 .button-close {
-  background-color: white;
+  background-color: var(--white-color);
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  color: black;
+  color: var(--black-color);
   cursor: pointer;
   margin-top: 8px;
   margin-right: 8px;
 }
 
 .is-hidden {
-  transform: scaleY(0);
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
+  transform: scale(50%);
 }
 
 /* KOLEJNA SEKCJA */
@@ -324,7 +332,7 @@ header {
   line-height: 1.71em;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #757575;
+  color: var(--grey-color);
   display: flex;
   justify-content: flex-end;
   width: 270px;
@@ -369,14 +377,13 @@ header {
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
-  /* background-color: linear-gradient(to right, #2f303acc 100%, #2f303acc 100); */
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
-  color: white;
+  color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -386,7 +393,6 @@ header {
 
 .team-background {
   background-color: #f5f4fa;
-  /* border: 1px solid none; */
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -399,9 +405,6 @@ header {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 0px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
-  /* padding-bottom: 94px; */
   gap: 30px;
 }
 
@@ -410,7 +413,7 @@ header {
   border: 0px none;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   width: 270px;
   justify-content: center;
   margin-top: 0px;
@@ -425,7 +428,6 @@ header {
   line-height: 1.17em;
   letter-spacing: 0.03em;
   text-align: center;
-  /* padding-top: 94px; */
   padding-bottom: 50px;
   margin: 0px;
 }
@@ -449,9 +451,8 @@ header {
   line-height: 1.88em;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #757575;
+  color: var(--grey-color);
   display: block;
-  /* padding-bottom: 30px; */
 }
 .team-icons-position {
   display: inline-flex;
@@ -480,8 +481,8 @@ header {
 
 .team-icons:hover,
 .team-icons:focus {
-  background-color: #2196f3;
-  fill: white;
+  background-color: var(--blue-color);
+  fill: var(--white-color);
 }
 
 /* KOLEJNA SEKCJA */
@@ -518,8 +519,8 @@ header {
 }
 .clients-icons-boxes:focus,
 .clients-icons-boxes:hover {
-  border: 1px solid #2196f3;
-  fill: #2196f3;
+  border: 1px solid var(--blue-color);
+  fill: var(--blue-color);
 }
 
 .icon-Logo1 {
@@ -577,7 +578,7 @@ footer {
 }
 
 .address {
-  color: #ffffff;
+  color: var(--white-color);
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -593,7 +594,7 @@ footer {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
   padding-top: 72px;
   padding-left: 70px;
 }
@@ -612,7 +613,7 @@ footer {
   background: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
-  fill: white;
+  fill: var(--white-color);
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -621,7 +622,7 @@ footer {
 
 .footer-icons:hover,
 .footer-icons:focus {
-  background-color: #2196f3;
+  background-color: var(--blue-color);
 }
 
 .icon-instagram {
@@ -674,8 +675,8 @@ footer {
 }
 .buttons:hover,
 .buttons:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-color);
+  background-color: var(--blue-color);
 }
 
 .image-signature {
@@ -698,7 +699,7 @@ footer {
   line-height: 1.88em;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #757575;
+  color: var(--grey-color);
   display: block;
   border: 1px none;
   margin: 0;
@@ -738,7 +739,7 @@ footer {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   position: relative;
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 .no-gap {
@@ -752,7 +753,7 @@ footer {
   line-height: 1.56;
   letter-spacing: 0.03em;
   text-align: left;
-  color: white;
+  color: var(--white-color);
   width: 301px;
   position: absolute;
   top: 49px;
